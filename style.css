@@ -1,0 +1,259 @@
+.main{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+  background-color: #111;
+  color: #999;
+
+}
+
+
+/* navigator */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav-ul>li{
+    list-style-type: none;
+    display: inline;
+    align-items: center;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+ul, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin:0;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 32px;
+    color: #C2B4AB;
+}
+
+.nav-menu{
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+a{
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover{
+    color: grey;
+    transition: 0.3s;
+}
+
+/* Main */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 20px;
+}
+.developer{
+    color:	#E6E6FA;
+}
+
+.click{
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 120px;
+  margin-top: 20px;
+  color:	#FFE4E1;
+}
+.english {
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+}
+
+/* info */
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box{
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 70%;
+  margin-right: 60px;
+}
+
+#info-picture{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.information>p{
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Nanum Myeongjo';
+}
+
+/* favorite */
+
+.favorite>li{
+  list-style-type: none;
+}
+
+.favorite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-item{
+  flex-basis: 240px;
+  flex-shrink: 0;
+  margin: 0 40px;
+  transition: all .4s;
+}
+
+.favorite-item:hover{
+  flex-basis: 360px;
+}
+
+.favorite-item img{
+  width: 100%;
+}
+
+
+.fav-section{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  background-color: #222;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-beige{
+  color: 	#A9A9A9;
+
+}
+
+.item-brown{
+  color: 	#D2B48C;
+}
+
+.item-yellow{
+  color: #EEE8AA;
+}
+
+.item:before{
+  content: ' ';
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.95+100 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.95) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#f2000000',GradientType=0 ); /* IE6-9 */
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+
+}
+.item-content{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.item-content h2{
+  font-size: 30px;
+  font-family: 'Merriweather', sans-serif;
+}
+
+.item-content p{
+  color: white;
+  font-size: 20px;
+  font-style: oblique;
+  min-width: 160px;
+  max-height: 0;
+  overflow: hidden;
+  line-height: 1.2;
+  transition: all .4s;
+  opacity: 0;
+  transition-delay: .2s;
+}
+
+.favorite-item:hover .item-content p{
+  max-height: 4.8em;
+  opacity: 1;
+  margin-top: 0.2em;
+
+}
+
+/* footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  font-family:'Merriweather', san-serif;
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+  border-top: 1px solid #C2B4AB;
+  color: #C2B4AB;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 10px;
+
+}
+
+.contact-icon>a{
+  font-family:'Merriweather', san-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.velog{
+  width: 40px;
+}
+.email{
+  width: 40px;
+}
+.footer>p{
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  margin-top: 20px;
+}
