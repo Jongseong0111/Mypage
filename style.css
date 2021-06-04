@@ -16,7 +16,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .nav-ul>li{
@@ -39,11 +39,16 @@ ul, h2, p{
     color: #C2B4AB;
 }
 
-.nav-menu{
-    font-family: 'Merriweather', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
+.logo-pic{
+  width: 80px;
 }
+.nav-menu{
+    font-family: 'Anton', serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
 
 a{
     color: #999;
@@ -76,6 +81,7 @@ a:hover{
   margin-top: 20px;
   color:	#FFE4E1;
 }
+
 .english {
   font-family: 'Lora', sans-serif;
   font-weight: 500;
@@ -232,7 +238,10 @@ a:hover{
   text-align: center;
   margin-bottom: 30px;
   padding-top: 10px;
+}
 
+.contact-icon{
+  margin-bottom: 30px;
 }
 
 .contact-icon>a{
